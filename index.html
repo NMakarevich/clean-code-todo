@@ -17,11 +17,13 @@
       </a>
     </section>
     <section class="todo">
-      <p id="top-section-for-adding-element-to-list"><label for="new-task">Add Item</label></p>
+      <p class="label-wrapper">
+        <label for="new-task" class="todo-heading">Add Item</label>
+      </p>
       <div class="todo-add">
         <input id="new-task" class="task" type="text" /><button class="button-add">Add</button>
       </div>
-      <h3>Todo</h3>
+      <h3 class="todo-heading">Todo</h3>
       <ul id="incomplete-tasks">
         <li>
           <input type="checkbox" />
@@ -37,7 +39,7 @@
           <button class="delete"><img src="./remove.svg" alt="remove icon" /></button>
         </li>
       </ul>
-      <h3>Completed</h3>
+      <h3 class="todo-heading">Completed</h3>
       <ul id="completed-tasks">
         <li>
           <input type="checkbox" checked /><label class="task">See the Doctor</label>
