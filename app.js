@@ -5,6 +5,7 @@ const completedTasksHolder = document.getElementById('completed-tasks');
 
 const createNewTaskElement = function (taskString) {
   const task = document.createElement('li');
+  task.classList.add('task-item');
 
   const isDone = document.createElement('input');
   const taskText = document.createElement('label');
