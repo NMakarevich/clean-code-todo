@@ -101,7 +101,7 @@ button:hover {
 }
 
 /* New Task */
-label.todo-heading {
+#new-task.todo-heading {
   display: block;
   margin: 0 0 20px;
 }
