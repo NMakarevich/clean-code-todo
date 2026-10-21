@@ -125,7 +125,7 @@ label.todo-heading {
   vertical-align: middle;
 }
 
-.task-item > input[type='checkbox'] {
+.task-item > .is-done {
   margin: 0 10px;
 }
 

@@ -19,6 +19,7 @@ const createNewTaskElement = function (taskString) {
   taskText.className = 'task-text';
 
   isDone.type = 'checkbox';
+  isDone.className = 'is-done';
   editInput.type = 'text';
   editInput.className = 'task-input';
 
@@ -84,7 +85,7 @@ addTaskButton.onclick = addTask;
 addTaskButton.addEventListener('click', addTask);
 
 const bindTaskEvents = function (task, checkBoxEventHandler) {
-  const isDone = task.querySelector('input[type=checkbox]');
+  const isDone = task.querySelector('.is-done');
   const editTaskButton = task.querySelector('button.edit');
   const deleteTaskButton = task.querySelector('button.delete');
 
