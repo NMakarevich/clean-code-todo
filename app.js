@@ -1,5 +1,5 @@
 const taskInput = document.getElementById('new-task');
-const addTaskButton = document.querySelector('.button-add');
+const addTaskButton = document.querySelector('.button.add');
 const incompleteTaskHolder = document.getElementById('incomplete-tasks');
 const completedTasksHolder = document.getElementById('completed-tasks');
 
@@ -24,9 +24,9 @@ const createNewTaskElement = function (taskString) {
   editInput.className = 'task-input';
 
   editTaskButton.innerText = 'Edit';
-  editTaskButton.className = 'edit';
+  editTaskButton.className = 'button edit';
 
-  deleteTaskButton.className = 'delete';
+  deleteTaskButton.className = 'button delete';
   deleteIcon.src = './remove.svg';
   deleteTaskButton.appendChild(deleteIcon);
 
@@ -86,8 +86,8 @@ addTaskButton.addEventListener('click', addTask);
 
 const bindTaskEvents = function (task, checkBoxEventHandler) {
   const isDone = task.querySelector('.is-done');
-  const editTaskButton = task.querySelector('button.edit');
-  const deleteTaskButton = task.querySelector('button.delete');
+  const editTaskButton = task.querySelector('.button.edit');
+  const deleteTaskButton = task.querySelector('.button.delete');
 
   editTaskButton.onclick = editTask;
   deleteTaskButton.onclick = deleteTask;
