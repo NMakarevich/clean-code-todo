@@ -16,11 +16,11 @@ const createNewTaskElement = function (taskString) {
   const deleteIcon = document.createElement('img');
 
   taskText.innerText = taskString;
-  taskText.className = 'task';
+  taskText.className = 'task-text';
 
   isDone.type = 'checkbox';
   editInput.type = 'text';
-  editInput.className = 'task';
+  editInput.className = 'task-input';
 
   editTaskButton.innerText = 'Edit';
   editTaskButton.className = 'edit';
@@ -46,8 +46,8 @@ const addTask = function () {
 const editTask = function () {
   const task = this.parentNode;
 
-  const editInput = task.querySelector('input[type=text]');
-  const taskText = task.querySelector('label');
+  const editInput = task.querySelector('.task-input');
+  const taskText = task.querySelector('.task-text');
   const editTaskButton = task.querySelector('.edit');
   const isEditMode = task.classList.contains('edit-mode');
 
