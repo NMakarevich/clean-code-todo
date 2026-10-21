@@ -1,6 +1,6 @@
 const taskInput = document.getElementById('new-task');
 const addTaskButton = document.querySelector('.button-add');
-const incompleteTaskHolder = document.getElementById('incompleteTasks');
+const incompleteTaskHolder = document.getElementById('incomplete-tasks');
 const completedTasksHolder = document.getElementById('completed-tasks');
 
 const createNewTaskElement = function (taskString) {
