@@ -48,7 +48,7 @@ const editTask = function () {
   const editInput = task.querySelector('input[type=text]');
   const taskText = task.querySelector('label');
   const editTaskButton = task.querySelector('.edit');
-  const isEditMode = task.classList.contains('editMode');
+  const isEditMode = task.classList.contains('edit-mode');
 
   if (isEditMode) {
     taskText.innerText = editInput.value;
@@ -58,7 +58,7 @@ const editTask = function () {
     editTaskButton.innerText = 'Save';
   }
 
-  task.classList.toggle('editMode');
+  task.classList.toggle('edit-mode');
 };
 
 const deleteTask = function () {
