@@ -101,7 +101,7 @@ input,
 }
 
 /* New Task */
-#new-task.todo-heading {
+.todo-heading:first-child {
   display: block;
   margin: 0 0 20px;
 }
