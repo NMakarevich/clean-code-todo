@@ -82,7 +82,6 @@ const taskIncomplete = function () {
 };
 
 addTaskButton.onclick = addTask;
-addTaskButton.addEventListener('click', addTask);
 
 const bindTaskEvents = function (task, checkBoxEventHandler) {
   const isDone = task.querySelector('.is-done');
